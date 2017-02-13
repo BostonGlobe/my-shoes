@@ -1,0 +1,16 @@
+{
+	"title": "Graphic title",
+	"author": "",
+	"description": "Description of graphic",
+	"keywords": "Comma, delimited, for, seo",
+	"url": "https://apps.bostonglobe.com/sports/graphics/2017/01/my-shoes",
+	"imageUrl": "https://apps.bostonglobe.com/path/to/image",
+	"section": "Sports",
+	"sectionUrl": "http://www.bostonglobe.com/sports",
+	"credits": "",
+	"teasers": [],
+	"social": true,
+	"meter": true,
+	"socialConnect": true,
+	"ads": false
+}

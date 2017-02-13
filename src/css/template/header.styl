@@ -1,0 +1,56 @@
+// Header Colorizer Mixin
+// gives accessible foreground color based on bg color
+header-color(bgcolor)
+    background-color bgcolor
+    if lightness(bgcolor) < 51%
+        color white
+        svg
+            fill white
+    if lightness(bgcolor) < 61%
+        &__title a
+            color white
+    else
+        color #222
+        svg
+            fill #222
+                
+.g-header
+    width 100%
+    padding 1rem
+    color #222
+    border-bottom 1px solid #ccc
+    header-color(#fff)
+    &__inner
+        position relative     
+        a
+            opacity .75
+            transition .2s ease all
+            &:hover
+                opacity 1
+    &__title
+        text-align left
+        padding-left 2.5em
+        letter-spacing .01em
+        font-size .9rem
+        @media only screen and (min-width: 50em)
+            text-align center
+            padding-left 0
+    &__logo
+        top 0
+        position absolute
+    &__share
+        top 0
+        right 0
+        position absolute
+    &__share-button
+        margin-left 15px
+
+// Logos
+.logo--lg
+    display none
+    @media only screen and (min-width: 50em)
+        display inline-block
+.logo--sm
+    display inline-block
+    @media only screen and (min-width: 50em)
+        display none
