@@ -8,6 +8,31 @@
 // See `base` folder for variables (color, font, media queries)
 
 //=======================
+// logos
+//=======================
+
+.series-logo
+	margin 0 auto
+	font-family $benton
+	text-align center
+	margin-top 2rem
+	font-size 1.5rem
+	
+.logo-image
+	width 4rem
+	display inline-block
+	vertical-align middle
+	margin 0 auto
+
+.logo-image-secondary
+	width 4rem
+	margin 0 auto
+	vertical-align middle
+	margin-top -1.4rem
+
+
+
+//=======================
 // Headline
 //=======================
 
@@ -19,10 +44,6 @@
 	&__dek
 		font-size 2rem
 		margin-top 1.5rem
-
-.series-logo
-	width 17rem
-	margin 3rem auto 0 auto
 	
 	
 
@@ -34,13 +55,11 @@
 .runner
 	@extends $container
 	&__meta
-		float left
 		width 15%
-		margin-right 5%
+		margin-left 5%
 		font-style italic
 	&__story
-		float left
-		width 80%
+		width 75%
 		rhythm base
 	&__name
 		font-size 4rem
@@ -50,4 +69,33 @@
 		font-size 2rem
 	&__meta-item
 		margin-bottom 0.5rem
+	&__container
+		display flex
 	
+
+	
+.divider
+	border-top 1px solid black
+	border-bottom 1px solid black
+	width 60%
+	height 8px
+	margin 10rem auto
+	
+.divider:last-child
+	display none
+	
+p 
+	margin-bottom 1.5rem
+	
+p:first-child
+	font-size 1.8rem
+	margin-bottom 1.7rem
+	
+// p:first-child:first-letter
+// 	font-size 5.6rem
+// 	line-height 6.1rem
+// 	padding-top 0.3rem
+// 	padding-right 0.5rem
+// 	float left
+// 	font-family $miller-banner
+// 	color #59889d

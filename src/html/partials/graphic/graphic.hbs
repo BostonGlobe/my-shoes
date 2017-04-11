@@ -1,3 +1,7 @@
+<div class="series-logo">
+	Boston <img class="logo-image" src="assets/photos/shoe.jpg"> Marathon
+</div>
+
 <div class="main-hed miller-banner-regular">
 	Me & my shoes
 	<div class="main-hed__dek">
@@ -7,29 +11,34 @@
 
 <div class="runner">
 {{#each copy.runners}}
-	{{#if image}}
-		<img src="assets/photos/{{image}}.jpg" class="runner__image">
-	{{/if}}
-	<div class="runner__name miller-banner-regular">
-		{{name}}
+		{{#if image}}
+			<img src="assets/photos/{{image}}.jpg" class="runner__image">
+		{{/if}}
+
+		<div class="runner__name miller-banner-regular">
+			{{name}}
+		</div>
+	<div class="runner__container">
+
+		
+		<div class="runner__story">
+			{{#each story}}
+			<p>{{this}}</p>
+			{{/each}}
+		</div>
+		<div class="runner__meta">
+			<div class="runner__meta-item">Town: {{town}}
+			</div>
+			<div class="runner__meta-item">Shoe: {{shoe}}
+			</div>
+		</div>
 	</div>
-	<div class="runner__meta">
-		<div class="runner__meta-item">My shoes: Asics X1230
-		</div>
-		<div class="runner__meta-item">When I bought them: 2014
-		</div>
-		<div class="runner__meta-item">Cost: $125
-		</div>
-		<div class="runner__meta-item">Races run: New York Marathon, Tufts 5K
-		</div>
-	</div>
-	<div class="runner__story">
-		{{#each story}}
-		<p>{{this}}</p>
-		{{/each}}
-	</div>
+
+	<div class="divider"> <img class="logo-image-secondary" src="assets/photos/shoe.jpg">
+			</div>
 	{{!-- <div class="runner__quote miller-regular">
 		"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 	</div> --}}
 {{/each}}
+
 </div>
