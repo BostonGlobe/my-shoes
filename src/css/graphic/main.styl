@@ -37,13 +37,29 @@
 //=======================
 
 .main-hed
-	font-size 9rem
-	margin 0 auto
-	text-align center
-	margin 2rem auto 3rem auto
+	&__hed
+		font-size 9rem
+		margin 0 auto
+		text-align center
+		margin 2rem auto 3rem auto
 	&__dek
 		font-size 2rem
 		margin-top 1.5rem
+	&__intro
+		font-family $serif
+		width 65%
+		margin 0 auto
+		text-align center
+		margin-bottom 5rem
+		+mq('bp-1')
+			font-size 1.5rem
+			line-height 3rem
+	&__byline
+		margin 0 auto 3rem 0
+		text-align center
+		font-size 1.3rem
+		font-weight 700
+		
 	
 	
 
@@ -71,7 +87,6 @@
 		margin-bottom 0.5rem
 	&__container
 		display flex
-	
 
 	
 .divider
@@ -90,6 +105,16 @@ p
 p:first-child
 	font-size 1.8rem
 	margin-bottom 1.7rem
+	
+p:last-child
+	margin-bottom 0
+	
+.italic
+	font-weight 400
+	font-style italic
+	
+.space
+	letter-spacing 1rem
 	
 // p:first-child:first-letter
 // 	font-size 5.6rem
