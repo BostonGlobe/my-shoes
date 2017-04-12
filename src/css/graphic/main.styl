@@ -16,7 +16,9 @@
 	font-family $benton
 	text-align center
 	margin-top 2rem
-	font-size 1.5rem
+	font-size 1.3rem
+	+mq('bp-1')
+		font-size 1.5rem
 	
 .logo-image
 	width 4rem
@@ -38,27 +40,42 @@
 
 .main-hed
 	&__hed
-		font-size 9rem
-		margin 0 auto
-		text-align center
-		margin 2rem auto 3rem auto
+		font-size 4rem
+		margin 1rem auto 1.1rem auto
+		width 90%
+		+mq('bp-1')
+			margin 3rem auto 3rem auto
+			font-size 9rem
+			text-align center
+			line-height 9.5rem
 	&__dek
 		font-size 2rem
 		margin-top 1.5rem
 	&__intro
 		font-family $serif
-		width 65%
+		width 90%
 		margin 0 auto
-		text-align center
 		margin-bottom 5rem
+		font-size 1.2rem
+		line-height 2.1rem
 		+mq('bp-1')
 			font-size 1.5rem
 			line-height 3rem
+			width 90%
+		+mq('bp-3')
+			width 65%
+			text-align center
+
 	&__byline
-		margin 0 auto 3rem 0
-		text-align center
-		font-size 1.3rem
+		margin 0rem auto 1rem auto
+		width 90%
+		font-size 1.1rem
 		font-weight 700
+		line-height 1.8rem
+		+mq('bp-2')
+			text-align center
+			margin 0 auto 3rem auto
+			font-size 1.3rem
 		
 	
 	
@@ -71,30 +88,49 @@
 .runner
 	@extends $container
 	&__meta
-		width 15%
-		margin-left 5%
 		font-style italic
+		order 1
+		width 90%
+		margin-bottom 2rem
+		+mq('bp-1')
+			order 2
+			width 15%
+			margin-left 5%
+			margin-bottom 0
+			margin-top 1rem
+
 	&__story
-		width 75%
-		rhythm base
+		width 95%
+		order 2
+		rhythm('base')
+		+mq('bp-1')
+			width 75%
+			order 1
 	&__name
-		font-size 4rem
-		margin 2rem 0
+		font-size 2.5rem
+		margin 1rem 0
+		+mq('bp-1')
+			font-size 4rem
+			margin 2rem 0
 	&__quote
 		width 100%
 		font-size 2rem
 	&__meta-item
 		margin-bottom 0.5rem
 	&__container
-		display flex
+		+mq('bp-1')
+			display flex
 
 	
 .divider
 	border-top 1px solid black
 	border-bottom 1px solid black
-	width 60%
+	width 70%
 	height 8px
-	margin 10rem auto
+	margin 5rem auto
+	+mq('bp-1')
+		margin 8rem auto 10rem auto
+		width 50%
 	
 .divider:last-child
 	display none
@@ -103,8 +139,13 @@ p
 	margin-bottom 1.5rem
 	
 p:first-child
-	font-size 1.8rem
-	margin-bottom 1.7rem
+	rhythm('base')
+	font-size 1.1rem
+	line-height 2.1rem
+	+mq('bp-1')
+		font-size 1.8rem
+		margin-bottom 1.7rem
+		line-height 3.5rem
 	
 p:last-child
 	margin-bottom 0
@@ -115,7 +156,23 @@ p:last-child
 	
 .space
 	letter-spacing 1rem
+	display none
+	+mq('bp-1')
+		display inline
+.break
+	display inline
+	+mq('bp-1')
+		display none
 	
+.ad-slot
+	margin 3rem 0 3rem 0
+	+mq('bp-1')
+		margin 5rem 0 7rem 0
+	&__overline span, p
+		font-size 0.8rem
+	&__overline a
+		font-size 0.8rem
+		
 // p:first-child:first-letter
 // 	font-size 5.6rem
 // 	line-height 6.1rem

@@ -7,7 +7,7 @@
 		Me & my shoes
 	</div>
 	<div class="main-hed__byline">
-		<span class="italic">Text by</span> {{copy.byline}}<span class="space"> |</span> <span class="italic">Photos by</span> {{copy.photo-byline}}
+		<span class="italic">Text by</span> {{copy.byline}}<span class="space"> |</span> <span class="break"> <br></span><span class="italic">Photos by</span> {{copy.photo-byline}}
 	</div>
 	<div class="main-hed__intro">
 		{{copy.intro}}
@@ -18,7 +18,17 @@
 <div class="runner">
 {{#each copy.runners}}
 		{{#if image}}
-			<img src="assets/photos/{{image}}.jpg" class="runner__image">
+			<figure>
+				<picture>
+					<!--[if IE 9]><video style='display: none;'><![endif]-->
+					<source data-srcset='assets/photos/optimized/{{image}}_800.jpg' media='(min-width: 50em)'>
+					<source data-srcset='assets/photos/optimized/{{image}}_800.jpg' media='(min-width: 25em)'>
+					<source data-srcset='assets/photos/optimized/{{image}}_400.jpg' media='(min-width:1px)'>
+					
+					<!--[if IE 9]></video><![endif]-->
+					<img class='lazyload' src='assets/photos/optimized/{{image}}_placeholder.jpg' alt='{{name}}' />
+					</picture>
+			</figure>
 		{{/if}}
 
 		<div class="runner__name miller-banner-regular">
@@ -26,22 +36,29 @@
 		</div>
 	<div class="runner__container">
 
-		
-		<div class="runner__story">
-			{{#each story}}
-			<p>{{this}}</p>
-			{{/each}}
-		</div>
 		<div class="runner__meta">
 			<div class="runner__meta-item">Town: {{town}}
 			</div>
 			<div class="runner__meta-item">Shoe: {{shoe}}
 			</div>
 		</div>
+		<div class="runner__story">
+			{{#each story}}
+			<p>{{this}}</p>
+			{{/each}}
+		</div>
+		
 	</div>
-
-	<div class="divider"> <img class="logo-image-secondary" src="assets/photos/shoe.jpg">
+		{{#if ad1}}
+		{{> base/base-ad-slot1}}
+		{{/if}}
+		{{#if ad2}}
+		{{> base/base-ad-slot2}}
+		{{/if}}
+		{{#if divider}}
+			<div class="divider"> <img class="logo-image-secondary" src="assets/photos/shoe.jpg">
 			</div>
+		{{/if}}
 	{{!-- <div class="runner__quote miller-regular">
 		"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 	</div> --}}

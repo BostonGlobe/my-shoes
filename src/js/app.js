@@ -1,6 +1,8 @@
 import setPathCookie from './utils/setPathCookie.js'
 import removeMobileHover from './utils/removeMobileHover.js'
 import wireSocialButtons from './utils/wireSocialButtons.js'
+import picturefill from 'picturefill'
+import lazysizes from 'lazysizes'
 
 removeMobileHover()
 setPathCookie()

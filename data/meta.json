@@ -1,16 +1,16 @@
 {
-	"title": "Graphic title",
-	"author": "",
-	"description": "Description of graphic",
-    "keywords": "Boston marathon, boston, marathon, running, running shoes, nike, adidas, asics, patriots day, meb, newton, hoka",
-	"url": "https://apps.bostonglobe.com/sports/graphics/2017/01/my-shoes",
-	"imageUrl": "https://apps.bostonglobe.com/path/to/image",
+	"title": "Finding the right shoes for the Boston Marathon isn't always easy",
+	"author": "Jon Chesto, Keith Bedford",
+	"description": "One of running’s greatest beauties is its simplicity. No special equipment needed, aside from the shoes on your feet. But for serious runners, picking the right pair of shoes isn’t quite so simple.",
+    "keywords": "boston marathon, boston, marathon, running, running shoes, nike, adidas, asics, patriots day, meb, newton, hoka",
+	"url": "https://apps.bostonglobe.com/sports/graphics/2017/04/my-shoes",
+	"imageUrl": "https://apps.bostonglobe.com/sports/graphics/2017/04/my-shoes/assets/photos/og-image.jpg",
 	"section": "Sports",
 	"sectionUrl": "http://www.bostonglobe.com/sports",
-	"credits": "",
+	"credits": "Design and development by Michael Workman",
 	"teasers": [],
 	"social": true,
 	"meter": true,
 	"socialConnect": true,
-	"ads": false
+	"ads": true
 }

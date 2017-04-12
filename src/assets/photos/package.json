@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lazysizes": "^3.0.0",
+    "picturefill": "^3.0.2"
+  }
+}
