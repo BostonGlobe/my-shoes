@@ -8,7 +8,7 @@
 	"section": "Sports",
 	"sectionUrl": "http://www.bostonglobe.com/sports",
 	"credits": "Design and development by Michael Workman",
-    "teasers": ["http://www.bostonglobe.com/sports/2017/02/14/boston-marathon-elite-field/gkxwztGFpQxPjPV89N6RlK/story.html", "http://www.bostonglobe.com/sports/2017/02/14/guide-boston-marathon/IakB7VTUxt6l4mmPlwZLUO/story.html", "http://www.bostonglobe.com/sports/2017/03/28/here-why-bib-number-boston-marathon-significant/gBETaoOSK8qySCg0flswqM/story.html"],
+    "teasers": ["http://apps.bostonglobe.com/sports/graphics/2017/04/shoe-history/", "http://www.bostonglobe.com/sports/2017/02/14/guide-boston-marathon/IakB7VTUxt6l4mmPlwZLUO/story.html", "http://www.bostonglobe.com/sports/2017/03/28/here-why-bib-number-boston-marathon-significant/gBETaoOSK8qySCg0flswqM/story.html"],
 	"social": true,
 	"meter": true,
 	"socialConnect": true,
